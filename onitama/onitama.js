@@ -1,3 +1,25 @@
+// canvas variables
+var canvasBoard = document.getElementById("boardCanvas");
+var ctxBoard = canvasBoard.getContext("2d");
+var $canvasBoard = $("#boardCanvas");
+var canvasBOffset = $canvasBoard.offset();
+var offsetXBoard = canvasBOffset.left;
+var offsetYBoard = canvasBOffset.top;
+var scrollX = $canvas.scrollLeft();
+var scrollY = $canvas.scrollTop();
+
+// set styles
+/*
+ctx.fillStyle = "skyblue";
+ctx.strokeStyle = "lightgray";
+ctx.lineWidth = 2;
+*/
+
+// listen for mousedown events
+$("#canvas").mousedown(function (e) {
+    handleMouseDown(e);
+});
+
 function drawBoard(){
   var c = document.getElementById("boardCanvas");
   var ctx = c.getContext("2d");
