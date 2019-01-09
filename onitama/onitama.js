@@ -9,5 +9,13 @@ function drawBoard(){
   ctx.lineTo(301,502);
   ctx.moveTo(401,0);
   ctx.lineTo(401,502);
+  ctx.moveTo(0,101);
+  ctx.lineTo(502,101);
+  ctx.moveTo(0,201);
+  ctx.lineTo(502,201);
+  ctx.moveTo(0,301);
+  ctx.lineTo(502,301);
+  ctx.moveTo(0,401);
+  ctx.lineTo(502,401);
   ctx.stroke();
 }
