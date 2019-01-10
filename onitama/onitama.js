@@ -5,8 +5,8 @@ var $canvasBoard = $("#boardCanvas");
 var canvasBOffset = $canvasBoard.offset();
 var offsetXBoard = canvasBOffset.left;
 var offsetYBoard = canvasBOffset.top;
-var scrollX = $canvas.scrollLeft();
-var scrollY = $canvas.scrollTop();
+var scrollXBoard = $canvasBoard.scrollLeft();
+var scrollYBoard = $canvasBoard.scrollTop();
 
 // set styles
 /*
