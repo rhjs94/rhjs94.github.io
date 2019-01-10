@@ -40,9 +40,7 @@ function handleMouseDown(e, shapes, ctx, offsetX, offsetY) {
     }
 }
 
-function drawBoard(){
-  var c = document.getElementById("boardCanvas");
-  var ctx = c.getContext("2d");
+function drawBoard(ctx){
   ctx.moveTo(0,0);
   ctx.lineTo(502,0);
   ctx.lineTo(502,502);

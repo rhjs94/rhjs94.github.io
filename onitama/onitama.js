@@ -15,13 +15,13 @@ ctx.strokeStyle = "lightgray";
 ctx.lineWidth = 2;
 */
 
-drawBoard();
+drawBoard(ctxBoard);
 
 // make shapes
 var boardFields = [];
 for (var i=0; i<5; i++) {
   for (var j=0; j<5; j++) {
-    boardFields.push( new Square( { x:1+i*100, y:1+j*100}, 100 ) );
+    boardFields.push( new Square( { x:1+i*100, y:1+j*100 }, 100 ) );
   }
 }
 
