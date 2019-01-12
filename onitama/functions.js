@@ -4,11 +4,11 @@
 function drawGrid(ctx, intX, intY, start, diagSize) {
 	iX = diagSize.x/intX;
 	iY = diagSize.y/intY;
-	for (var i=1; i<intX; i++;) {
+	for (var i=1; i<intX; i++) {
 		ctx.moveTo(start.x+iX*i, start.y);
 		ctx.lineTo(start.x+iX*i, start.y+diagSize.y);
 	}
-	for (var i=1; i<intY; i++;) {
+	for (var i=1; i<intY; i++) {
 		ctx.moveTo(start.x, start.y+iY*i);
 		ctx.lineTo(start.x+diagSize.x, start.y+iY*i);
 	}
