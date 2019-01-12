@@ -39,7 +39,7 @@ function cross(ctx, topLeft, width, line, color) {
 }
 
 function circle(ctx, topLeft, width, line, color) {
-	var margin = width/10;
+	var margin = width/12;
 	ctx.beginPath();
 	ctx.arc(topLeft.x + width/2, topLeft.y + width/2, (width/2)-margin, 0, 2 * Math.PI);
 	ctx.strokeStyle = color;
