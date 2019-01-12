@@ -27,7 +27,7 @@ function drawBoard(ctx){
 }
 
 function cross(ctx, topLeft, width, line, color) {
-	var margin = width/6;
+	var margin = width/4;
 	ctx.beginPath();
 	ctx.moveTo(topLeft.x + margin, topLeft.y + margin);
 	ctx.lineTo(topLeft.x + width - margin, topLeft.y + width - margin);
