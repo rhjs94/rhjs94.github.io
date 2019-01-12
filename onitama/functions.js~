@@ -32,7 +32,7 @@ function cross(ctx, topLeft, width, line, color) {
 	ctx.moveTo(topLeft.x + margin, topLeft.y + margin);
 	ctx.lineTo(topLeft.x + width - margin, topLeft.y + width - margin);
 	ctx.moveTo(topLeft.x + width - margin, topLeft.y + margin);
-	ctx.lineTo(topLeft + margin, topLeft + width - margin);
+	ctx.lineTo(topLeft.x + margin, topLeft.x + width - margin);
 	ctx.lineWidth = line;
 	ctx.strokeStyle = color;
 	ctx.stroke();
