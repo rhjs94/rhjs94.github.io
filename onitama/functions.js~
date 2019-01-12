@@ -66,7 +66,7 @@ function drawCircle2(ctx, topLeft, width) {
 function drawPieces(ctx) {
 	for (var i=0; i<5; i++) {
 		drawCross(ctx, { x:1, y:1+i*100 }, 100);
-		drawCross2(ctx, { x:501, y:1+i*100 }, 100);
+		drawCross2(ctx, { x:401, y:1+i*100 }, 100);
 	}
 	drawCircle(ctx, { x:1, y:201 }, 100);
 	drawCircle2(ctx, { x:401, y:201 }, 100);
