@@ -2,7 +2,7 @@
 // (needed because isPointInPath only tests the last defined path)
 
 function define(shape, ctx) {
-    var points = shape.points;
+    var points = shape.points();
     ctx.beginPath();
     ctx.moveTo(points[0].x, points[0].y);
     for (var i = 1; i < points.length; i++) {
