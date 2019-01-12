@@ -69,7 +69,7 @@ function drawPieces(ctx) {
 		drawCross2(ctx, { x:501, y:1+i*100 }, 100);
 	}
 	drawCircle(ctx, { x:1, y:201 }, 100);
-	drawCircle(ctx, { x:1, y:201 }, 100);
+	drawCircle2(ctx, { x:401, y:201 }, 100);
 }
 
 function define(shape, ctx) {

@@ -42,7 +42,7 @@ function circle(ctx, topLeft, width, line, color) {
 	var margin = width/8;
 	ctx.beginPath();
 	ctx.arc(topLeft.x + width/2, topLeft.y + width/2, (width/2)-margin, 0, 2 * Math.PI);
-	ctrx.strokeStyle = color;
+	ctx.strokeStyle = color;
 	ctx.lineWidth = line;
 	ctx.stroke();	
 }
