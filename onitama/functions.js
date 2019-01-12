@@ -20,11 +20,13 @@ function drawGrid(ctx, intX, intY, start, diagSize) {
 
 function drawBoard(ctx){
 	// draw rectangular border
+	// ctx.beginPath();
 	ctx.moveTo(0,0);
 	ctx.lineTo(502,0);
 	ctx.lineTo(502,502);
 	ctx.lineTo(0,502);
 	ctx.lineTo(0,0);
+	ctx.stroke();
 	
 	drawGrid(ctx, 5, 5, {x:1,y:1}, {x:500,y:500});
 
