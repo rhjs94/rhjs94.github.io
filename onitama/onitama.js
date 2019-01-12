@@ -18,7 +18,7 @@ var offsetYCardL = canvasBOffset.top;
 var scrollXCardL = $canvasCardL.scrollLeft();
 var scrollYCardL = $canvasCardL.scrollTop();
 
-// canvas variables - cards left
+// canvas variables - cards right
 var canvasCardR = document.getElementById("cardRCanvas");
 var ctxCardR = canvasCardR.getContext("2d");
 var $canvasCardR = $("#cardRCanvas");
@@ -38,12 +38,8 @@ ctx.lineWidth = 2;
 drawBoard(ctxBoard);
 
 // make shapes
-var boardFields = [];
-for (var i=0; i<5; i++) {
-  for (var j=0; j<5; j++) {
-    boardFields.push( new Square( { x:1+i*100, y:1+j*100 }, 100 ) );
-  }
-}
+var board = new Board(5,5);
+var boardFields = board.fields;
 
 drawPieces(ctxBoard);
 
@@ -51,3 +47,10 @@ drawPieces(ctxBoard);
 $("#boardCanvas").mousedown(function (e) {
     handleMouseDown(e, boardFields, ctxBoard, offsetXBoard, offsetYBoard);
 });
+$("#cardLCanvas").mousedown(function (e) {
+    handleMouseDownLeft(e);
+});
+$("#cardRCanvas").mousedown(function (e) {
+    handleMouseDownRight(e);
+});
+

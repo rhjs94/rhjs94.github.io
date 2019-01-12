@@ -26,8 +26,12 @@ function drawBoard(ctx){
   ctx.stroke();
 }
 
+function getField(boardFields, integerX, integerY) {
+	return boardFields[(integerX-1)*5 + (integerY-1)];
+}
+
 function cross(ctx, topLeft, width, line, color) {
-	var margin = width/5;
+	var margin = width/4;
 	ctx.beginPath();
 	ctx.moveTo(topLeft.x + margin, topLeft.y + margin);
 	ctx.lineTo(topLeft.x + width - margin, topLeft.y + width - margin);
