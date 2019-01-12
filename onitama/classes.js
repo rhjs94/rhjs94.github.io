@@ -24,7 +24,7 @@ function Board(xMax, yMax) {
 			if (i=0) { occ = 1; }
 			else if (i=4) { occ = 2; }
 			else {occ = 0;}
-			fields.push( new Square( { x:1+i*100, y:1+j*100 }, 100, occ ) );
+			this.fields.push( new Square( { x:1+i*100, y:1+j*100 }, 100, occ ) );
 		}
 	}
 
